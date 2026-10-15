@@ -106,7 +106,7 @@ export default function Home() {
         <div className="plansTeaserCopy">
           <span className="eyebrow">FREE OR PREMIUM</span>
           <h2>Start simple. Upgrade when you want RosterPal to do more of the work.</h2>
-          <p>RosterPal Free gives you the essential tools to manually manage your shifts. RosterPal Premium unlocks automatic roster importing, Master Roster, Week-to-Week tools, cloud backup and the complete feature set shown across this website.</p>
+          <p>RosterPal Free gives you essential manual shift tools and access to your Master Roster. RosterPal Premium unlocks automatic PDF and image importing, Week-to-Week, advanced planning tools, calendar integrations, cloud backup and the complete feature set shown across this website.</p>
         </div>
         <div className="plansTeaserActions">
           <Link className="button buttonPrimary" href="/plans">Compare Free &amp; Premium</Link>
