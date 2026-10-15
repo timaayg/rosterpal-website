@@ -1,6 +1,54 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const promoFeatures = [
+  {
+    src: "/promo/upload-ai.webp",
+    title: "AI roster import",
+    body: "Import Week-to-Week roster images or PDFs, review the read and add shifts to your calendar in minutes.",
+  },
+  {
+    src: "/promo/roster-layout.webp",
+    title: "Switch roster styles",
+    body: "Move between Master Roster and Week-to-Week whenever the way your workplace publishes shifts changes.",
+  },
+  {
+    src: "/promo/upcoming-shifts.webp",
+    title: "See what’s next",
+    body: "Keep upcoming shifts, days off and the next working week visible at a glance.",
+  },
+  {
+    src: "/promo/shift-reminders.webp",
+    title: "Shift reminders",
+    body: "Get notified before upcoming shifts and when your Week-to-Week roster still needs updating.",
+  },
+  {
+    src: "/promo/insights.webp",
+    title: "Roster insights",
+    body: "See monthly outlooks, work patterns, consecutive runs and recovery trends in one place.",
+  },
+  {
+    src: "/promo/fatigue.webp",
+    title: "Fatigue & recovery",
+    body: "Use roster-based indicators to understand fatigue pressure, recovery time and weekly workload.",
+  },
+  {
+    src: "/promo/fatigue-score.webp",
+    title: "Understand your score",
+    body: "See the roster factors behind projected fatigue scores and the next seven days at a glance.",
+  },
+  {
+    src: "/promo/appearance.webp",
+    title: "Choose your look",
+    body: "Switch between Original, Rose and Light themes to suit your preference, day or night.",
+  },
+  {
+    src: "/promo/work-calendar.webp",
+    title: "Work Calendar",
+    body: "Bring shifts, rest days, fatigue indicators and personal planning together in one calendar.",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -21,8 +69,13 @@ export default function Home() {
 
       <section className="introHero">
         <div className="introCopy">
-          <span className="eyebrow">WHAT IS ROSTERPAL?</span>
+          <span className="eyebrow">BUILT FOR SHIFT WORKERS</span>
           <h1>Your work roster, made useful for real life.</h1>
+          <div className="heroChips" aria-label="RosterPal supports">
+            <span>Rotating rosters</span>
+            <span>Week-to-week shifts</span>
+            <span>Life around work</span>
+          </div>
           <p className="introLead">
             RosterPal is a personal roster and shift-planning app built for people whose work does not fit neatly into a Monday-to-Friday, nine-to-five calendar. It turns complex rotating rosters, changing weekly schedules and unusual shift patterns into a clear personal view of when you work, when you are free and what is coming next.
           </p>
@@ -84,20 +137,19 @@ export default function Home() {
           <p>Beyond importing a roster, RosterPal helps you see what is coming, understand your work pattern, keep an eye on recovery and make the app feel like your own.</p>
         </div>
         <div className="visualFeatureGrid">
-          {[
-            ["/promo/upload-ai.webp", "AI roster import"],
-            ["/promo/roster-layout.webp", "Roster styles"],
-            ["/promo/upcoming-shifts.webp", "Upcoming shifts"],
-            ["/promo/shift-reminders.webp", "Shift reminders"],
-            ["/promo/insights.webp", "Roster insights"],
-            ["/promo/fatigue.webp", "Fatigue and recovery"],
-            ["/promo/fatigue-score.webp", "Fatigue score breakdown"],
-            ["/promo/appearance.webp", "Appearance themes"],
-            ["/promo/work-calendar.webp", "Work Calendar"],
-          ].map(([src, alt]) => (
-            <figure className="visualFeatureCard" key={src}>
-              <Image src={src} alt={alt} width={941} height={1672} />
-            </figure>
+          {promoFeatures.map((feature, index) => (
+            <article className={`visualFeatureCard ${index === 0 ? "visualFeatureCardFeatured" : ""}`} key={feature.src}>
+              <div className="visualFeatureImage">
+                <Image src={feature.src} alt={feature.title} width={941} height={1672} />
+              </div>
+              <div className="visualFeatureCopy">
+                <span className="visualFeatureNumber">{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.body}</p>
+                </div>
+              </div>
+            </article>
           ))}
         </div>
       </section>
