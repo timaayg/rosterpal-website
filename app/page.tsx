@@ -178,6 +178,27 @@ export default function Home() {
         <Image src="/rosterpal-mark.png" alt="" width={88} height={88} className="downloadMark" />
         <h2>Plan your shifts. Own your time.</h2>
         <p>RosterPal is designed for real shift work.</p>
+        <div className="downloadOptions" aria-label="Download RosterPal">
+          <a
+            className="storeButton storeButtonGoogle"
+            href="https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal&hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="storeIcon" aria-hidden="true">▶</span>
+            <span>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+          <div className="storeButton storeButtonComingSoon" aria-label="RosterPal for iOS coming soon">
+            <span className="storeIcon storeAppleIcon" aria-hidden="true"></span>
+            <span>
+              <small>COMING SOON ON</small>
+              <strong>App Store</strong>
+            </span>
+          </div>
+        </div>
       </section>
     </main>
   );
