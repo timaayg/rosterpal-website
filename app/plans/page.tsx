@@ -3,17 +3,16 @@ import Link from "next/link";
 
 const freeFeatures = [
   "Access your Master Roster and repeating schedule",
+  "View rostered shifts in the calendar",
   "Check today’s shift and upcoming work",
   "Manually add and manage shifts",
   "Record start and finish times",
   "Save roles and work locations",
   "Record rest days and leave",
-  "Partial calendar access — current month plus the next two months",
 ];
 
 const premiumFeatures = [
   "Everything included in RosterPal Free",
-  "Full calendar access",
   "Automatic PDF and image roster importing",
   "Full Week-to-Week roster tools",
   "Leave Planner",
@@ -43,21 +42,21 @@ export default function PlansPage() {
       <section className="pageHero plansHero">
         <span className="eyebrow">ROSTERPAL FREE &amp; PREMIUM</span>
         <h1>Start with your roster. Unlock the complete experience with Premium.</h1>
-        <p>RosterPal Free gives you the essentials, including access to your Master Roster and a three-month calendar window. Premium unlocks the full calendar plus the advanced planning, importing, Week-to-Week, cloud and roster-management tools.</p>
+        <p>RosterPal Free gives you the essentials, including access to your Master Roster. Premium unlocks the advanced planning, importing, Week-to-Week, cloud and roster-management tools.</p>
       </section>
 
       <section className="plansSection">
         <article className="planCard freePlan">
           <div className="planCardHeader"><span className="planPill">FREE</span><h2>RosterPal Free</h2><p>Get started with the essential tools you need to organise your working life.</p></div>
-          <p className="planDescription">With RosterPal Free, you can access your Master Roster, check today’s shift and upcoming work, manually add and manage shifts, and use the calendar for the current month plus the next two months.</p>
-          <p className="planDescription">Advanced planning and roster-management tools are reserved for RosterPal Premium, including full calendar access, Leave Planner, Leave History, Compare Rosters, Shift Swap tools, automatic roster importing, Week-to-Week tools and cloud backup and synchronisation.</p>
+          <p className="planDescription">With RosterPal Free, you can access your Master Roster, view your repeating shifts, check today’s shift and upcoming work, and see your schedule in the calendar. You can also manually add and manage shifts and record key details such as start and finish times, roles, locations, rest days and leave.</p>
+          <p className="planDescription">Advanced planning and roster-management tools are reserved for RosterPal Premium, including Leave Planner, Leave History, Compare Rosters, Shift Swap tools, automatic roster importing, Week-to-Week tools and cloud backup and synchronisation.</p>
           <ul className="planChecklist">{freeFeatures.map((feature) => <li key={feature}><span>✓</span>{feature}</li>)}</ul>
         </article>
 
         <article className="planCard premiumPlan">
           <div className="premiumGlow" aria-hidden="true" />
           <div className="planCardHeader"><span className="planPill premiumPill">PREMIUM</span><h2>RosterPal Premium</h2><p>Unlock the complete RosterPal experience and take the work out of managing your shifts.</p></div>
-          <p className="planDescription">Premium includes everything in Free, plus full calendar access, automatic PDF and image roster importing, Week-to-Week tools, advanced Master Roster features, Leave Planner, Leave History, Compare Rosters, Shift Swap tools, cloud backup, roster protection and the complete feature set.</p>
+          <p className="planDescription">Premium includes everything in Free, plus automatic PDF and image roster importing, Week-to-Week tools, advanced Master Roster features, Leave Planner, Leave History, Compare Rosters, Shift Swap tools, cloud backup, roster protection and the complete feature set.</p>
           <p className="planDescription">Whether your roster repeats or changes every week, RosterPal Premium helps you stay organised and know exactly when and where you’re working.</p>
           <ul className="planChecklist">{premiumFeatures.map((feature) => <li key={feature}><span>✓</span>{feature}</li>)}</ul>
         </article>
@@ -66,7 +65,7 @@ export default function PlansPage() {
       <section className="planComparisonCallout">
         <span className="eyebrow">THE SIMPLE DIFFERENCE</span>
         <h2>Free keeps you organised. Premium unlocks the advanced tools.</h2>
-        <p><strong>RosterPal Free</strong> includes access to your Master Roster, manual shift tools and calendar access for the current month plus the next two months. <strong>RosterPal Premium</strong> adds full calendar access, automatic importing, Week-to-Week, advanced Master Roster planning, Leave Planner, Leave History, Compare Rosters, Shift Swap tools, cloud backup and the complete RosterPal feature set.</p>
+        <p><strong>RosterPal Free</strong> includes access to your Master Roster and essential calendar and shift-management tools. <strong>RosterPal Premium</strong> adds automatic importing, Week-to-Week, advanced Master Roster planning, Leave Planner, Leave History, Compare Rosters, Shift Swap tools, cloud backup and the complete RosterPal feature set.</p>
         <div className="differenceActions"><Link className="button buttonPrimary" href="/master-roster">Explore Master Roster</Link><Link className="button buttonSecondary" href="/week-to-week">Explore Week-to-Week</Link></div>
       </section>
     </main>

@@ -87,11 +87,63 @@ export default function WeekToWeekPage() {
           <h2>Each new roster becomes a reviewed calendar update.</h2>
           <p>The workflow is built around changing schedules rather than a repeating cycle.</p>
         </div>
-        <div className="processGrid">
-          <article><span>01</span><h3>Import the latest roster</h3><p>Choose the new PDF or image issued for the week instead of manually entering every day.</p></article>
-          <article><span>02</span><h3>RosterPal finds your shifts</h3><p>RosterPal identifies the correct employee and extracts dates, start times, finish times and supported roster detail.</p></article>
-          <article><span>03</span><h3>Review and edit</h3><p>Check detected shifts, correct anything that needs attention and catch duplicate or overlapping times before saving.</p></article>
-          <article><span>04</span><h3>Update your calendar</h3><p>Add the imported week directly to the calendar or replace an existing week when a new version is issued.</p></article>
+        <div className="processGrid processGridWithScreens">
+          <article>
+            <span>01</span>
+            <h3>Import the latest roster</h3>
+            <p>Choose the new PDF or image issued for the week instead of manually entering every day.</p>
+            <div className="processScreenshotWrap">
+              <Image
+                src="/week-to-week-step-1-upload.png"
+                alt="RosterPal Week-to-Week upload screen showing a selected weekly roster file"
+                width={1024}
+                height={1536}
+                className="processScreenshot"
+              />
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>RosterPal finds your shifts</h3>
+            <p>RosterPal identifies the correct employee and extracts dates, start times, finish times and supported roster detail.</p>
+            <div className="processScreenshotWrap">
+              <Image
+                src="/week-to-week-step-2-reading.png"
+                alt="RosterPal reading a Week-to-Week roster"
+                width={1024}
+                height={1536}
+                className="processScreenshot"
+              />
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Review and edit</h3>
+            <p>Check detected shifts, correct anything that needs attention and catch duplicate or overlapping times before saving.</p>
+            <div className="processScreenshotWrap">
+              <Image
+                src="/week-to-week-step-3-review.png"
+                alt="RosterPal review screen showing detected Week-to-Week shifts ready to edit"
+                width={1024}
+                height={1536}
+                className="processScreenshot"
+              />
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Update your calendar</h3>
+            <p>Add the imported week directly to the calendar or replace an existing week when a new version is issued.</p>
+            <div className="processScreenshotWrap">
+              <Image
+                src="/week-to-week-step-4-calendar.png"
+                alt="RosterPal Work Calendar showing the imported Week-to-Week shifts"
+                width={1024}
+                height={1536}
+                className="processScreenshot"
+              />
+            </div>
+          </article>
         </div>
       </section>
 
@@ -101,13 +153,16 @@ export default function WeekToWeekPage() {
           <h2>Everything Week-to-Week is designed to handle.</h2>
           <p>These are the core Week-to-Week capabilities currently represented on the site.</p>
         </div>
+
         <div className="featureGroupGrid">
           {weekFeatureGroups.map((group) => (
             <article className="featureGroupCard" key={group.title}>
               <h3>{group.title}</h3>
               <p>{group.intro}</p>
               <ul className="featureChecklist">
-                {group.items.map((item) => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}
+                {group.items.map((item) => (
+                  <li key={item}><span aria-hidden="true">✓</span>{item}</li>
+                ))}
               </ul>
             </article>
           ))}
@@ -117,7 +172,9 @@ export default function WeekToWeekPage() {
       <section className="differenceCallout">
         <span className="eyebrow">IS WEEK-TO-WEEK RIGHT FOR YOU?</span>
         <h2>Your workplace issues a new roster that changes each week.</h2>
-        <p>If your shifts are newly published rather than repeating through a fixed cycle, Week-to-Week is the RosterPal workflow designed for that pattern.</p>
+        <p>
+          If your shifts are newly published rather than repeating through a fixed cycle, Week-to-Week is the RosterPal workflow designed for that pattern.
+        </p>
         <div className="differenceActions">
           <Link className="button buttonPrimary" href="/benefits#week">See Week-to-Week benefits</Link>
           <Link className="button buttonSecondary" href="/master-roster">Compare Master Roster</Link>

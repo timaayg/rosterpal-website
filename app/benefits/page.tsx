@@ -22,12 +22,14 @@ export default function BenefitsPage() {
       <section className="pageHero benefitsHero">
         <span className="eyebrow">HOW ROSTERPAL BENEFITS YOU</span>
         <h1>Two roster types. Two different workflows. One goal: make your roster easier to live with.</h1>
-        <p>Master Roster and Week-to-Week solve different problems. The benefit comes from using the workflow that matches how your workplace actually publishes your shifts.</p>
+        <p>
+          Master Roster and Week-to-Week solve different problems. The benefit comes from using the workflow that matches how your workplace actually publishes your shifts.
+        </p>
         <div className="premiumNotice">
           <span className="premiumBadge">PREMIUM</span>
           <div>
-            <strong>Premium unlocks the full set of advanced tools described below.</strong>
-            <p>RosterPal Free includes essential manual shift tools plus Master Roster access and partial calendar access. Premium adds automatic importing, Week-to-Week, full calendar access, advanced planning and cloud features.</p>
+            <strong>The complete feature set described below is available with RosterPal Premium.</strong>
+            <p>RosterPal Free includes essential manual shift and calendar tools. Premium adds automatic importing, Master Roster, Week-to-Week, cloud backup and the full RosterPal feature set.</p>
           </div>
           <Link href="/plans">See Free vs Premium →</Link>
         </div>
@@ -37,7 +39,9 @@ export default function BenefitsPage() {
         <div className="benefitTypeHeader">
           <span className="pathTag">MASTER ROSTER</span>
           <h2>Your roster repeats. RosterPal keeps the pattern working for you.</h2>
-          <p>Master Roster is designed to remove the repeated setup work from rotating and repeating cycles.</p>
+          <p>
+            Master Roster is designed to remove the repeated setup work from rotating and repeating cycles.
+          </p>
         </div>
         <div className="benefitCards">
           <article><h3>Enter less</h3><p>Import the PDF or image and let RosterPal extract the shifts and repeating structure instead of entering every duty yourself.</p></article>
@@ -53,7 +57,9 @@ export default function BenefitsPage() {
         <div className="benefitTypeHeader">
           <span className="pathTag">WEEK-TO-WEEK</span>
           <h2>Your roster changes. RosterPal helps turn each new issue into an updated calendar.</h2>
-          <p>Week-to-Week is designed to reduce the repeated reading, copying and checking involved every time a new roster is published.</p>
+          <p>
+            Week-to-Week is designed to reduce the repeated reading, copying and checking involved every time a new roster is published.
+          </p>
         </div>
         <div className="benefitCards">
           <article><h3>Import instead of retyping</h3><p>Bring in each PDF or image and let RosterPal identify the employee, dates and shift times from the newly issued roster.</p></article>
@@ -69,8 +75,18 @@ export default function BenefitsPage() {
         <span className="eyebrow">THE DIFFERENCE IS SIMPLE</span>
         <h2>Choose the RosterPal workflow that matches your roster.</h2>
         <div className="rosterDifferenceGrid">
-          <article><span>MASTER ROSTER</span><strong>A repeating roster pattern</strong><p>Best suited to a roster that rotates or repeats through a cycle.</p><Link href="/master-roster">View Master Roster features →</Link></article>
-          <article><span>WEEK-TO-WEEK</span><strong>A newly issued roster that changes each week</strong><p>Best suited to schedules that are republished with different duties or times.</p><Link href="/week-to-week">View Week-to-Week features →</Link></article>
+          <article>
+            <span>MASTER ROSTER</span>
+            <strong>A repeating roster pattern</strong>
+            <p>Best suited to a roster that rotates or repeats through a cycle.</p>
+            <Link href="/master-roster">View Master Roster features →</Link>
+          </article>
+          <article>
+            <span>WEEK-TO-WEEK</span>
+            <strong>A newly issued roster that changes each week</strong>
+            <p>Best suited to schedules that are republished with different duties or times.</p>
+            <Link href="/week-to-week">View Week-to-Week features →</Link>
+          </article>
         </div>
       </section>
     </main>

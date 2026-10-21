@@ -1,54 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const promoFeatures = [
-  {
-    src: "/promo/upload-ai.webp",
-    title: "AI roster import",
-    body: "Import Week-to-Week roster images or PDFs, review the read and add shifts to your calendar in minutes.",
-  },
-  {
-    src: "/promo/roster-layout.webp",
-    title: "Switch roster styles",
-    body: "Move between Master Roster and Week-to-Week whenever the way your workplace publishes shifts changes.",
-  },
-  {
-    src: "/promo/upcoming-shifts.webp",
-    title: "See what’s next",
-    body: "Keep upcoming shifts, days off and the next working week visible at a glance.",
-  },
-  {
-    src: "/promo/shift-reminders.webp",
-    title: "Shift reminders",
-    body: "Get notified before upcoming shifts and when your Week-to-Week roster still needs updating.",
-  },
-  {
-    src: "/promo/insights.webp",
-    title: "Roster insights",
-    body: "See monthly outlooks, work patterns, consecutive runs and recovery trends in one place.",
-  },
-  {
-    src: "/promo/fatigue.webp",
-    title: "Fatigue & recovery",
-    body: "Use roster-based indicators to understand fatigue pressure, recovery time and weekly workload.",
-  },
-  {
-    src: "/promo/fatigue-score.webp",
-    title: "Understand your score",
-    body: "See the roster factors behind projected fatigue scores and the next seven days at a glance.",
-  },
-  {
-    src: "/promo/appearance.webp",
-    title: "Choose your look",
-    body: "Switch between Original, Rose and Light themes to suit your preference, day or night.",
-  },
-  {
-    src: "/promo/work-calendar.webp",
-    title: "Work Calendar",
-    body: "Bring shifts, rest days, fatigue indicators and personal planning together in one calendar.",
-  },
-];
-
 export default function Home() {
   return (
     <main>
@@ -69,13 +21,8 @@ export default function Home() {
 
       <section className="introHero">
         <div className="introCopy">
-          <span className="eyebrow">BUILT FOR SHIFT WORKERS</span>
+          <span className="eyebrow">WHAT IS ROSTERPAL?</span>
           <h1>Your work roster, made useful for real life.</h1>
-          <div className="heroChips" aria-label="RosterPal supports">
-            <span>Rotating rosters</span>
-            <span>Week-to-week shifts</span>
-            <span>Life around work</span>
-          </div>
           <p className="introLead">
             RosterPal is a personal roster and shift-planning app built for people whose work does not fit neatly into a Monday-to-Friday, nine-to-five calendar. It turns complex rotating rosters, changing weekly schedules and unusual shift patterns into a clear personal view of when you work, when you are free and what is coming next.
           </p>
@@ -130,35 +77,11 @@ export default function Home() {
         <Link className="button buttonPrimary" href="/benefits">See the benefits</Link>
       </section>
 
-      <section className="visualFeaturesSection">
-        <div className="sectionHeading leftAligned">
-          <span className="eyebrow">MORE OF ROSTERPAL</span>
-          <h2>Designed for the whole rhythm of shift work.</h2>
-          <p>Beyond importing a roster, RosterPal helps you see what is coming, understand your work pattern, keep an eye on recovery and make the app feel like your own.</p>
-        </div>
-        <div className="visualFeatureGrid">
-          {promoFeatures.map((feature, index) => (
-            <article className={`visualFeatureCard ${index === 0 ? "visualFeatureCardFeatured" : ""}`} key={feature.src}>
-              <div className="visualFeatureImage">
-                <Image src={feature.src} alt={feature.title} width={941} height={1672} />
-              </div>
-              <div className="visualFeatureCopy">
-                <span className="visualFeatureNumber">{String(index + 1).padStart(2, "0")}</span>
-                <div>
-                  <h3>{feature.title}</h3>
-                  <p>{feature.body}</p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="plansTeaser">
         <div className="plansTeaserCopy">
           <span className="eyebrow">FREE OR PREMIUM</span>
           <h2>Start simple. Upgrade when you want RosterPal to do more of the work.</h2>
-          <p>RosterPal Free gives you essential manual shift tools and access to your Master Roster. RosterPal Premium unlocks automatic PDF and image importing, Week-to-Week, advanced planning tools, calendar integrations, cloud backup and the complete feature set shown across this website.</p>
+          <p>RosterPal Free gives you the essential tools to manually manage your shifts. RosterPal Premium unlocks automatic roster importing, Master Roster, Week-to-Week tools, cloud backup and the complete feature set shown across this website.</p>
         </div>
         <div className="plansTeaserActions">
           <Link className="button buttonPrimary" href="/plans">Compare Free &amp; Premium</Link>
@@ -178,27 +101,6 @@ export default function Home() {
         <Image src="/rosterpal-mark.png" alt="" width={88} height={88} className="downloadMark" />
         <h2>Plan your shifts. Own your time.</h2>
         <p>RosterPal is designed for real shift work.</p>
-        <div className="downloadOptions" aria-label="Download RosterPal">
-          <a
-            className="storeButton storeButtonGoogle"
-            href="https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal&hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="storeIcon" aria-hidden="true">▶</span>
-            <span>
-              <small>GET IT ON</small>
-              <strong>Google Play</strong>
-            </span>
-          </a>
-          <div className="storeButton storeButtonComingSoon" aria-label="RosterPal for iOS coming soon">
-            <span className="storeIcon storeAppleIcon" aria-hidden="true"></span>
-            <span>
-              <small>COMING SOON ON</small>
-              <strong>App Store</strong>
-            </span>
-          </div>
-        </div>
       </section>
     </main>
   );
