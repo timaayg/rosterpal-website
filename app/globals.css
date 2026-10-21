@@ -1170,13 +1170,18 @@ a {
   padding-bottom: 20px;
 }
 
+.processGridWithScreens article > h3 {
+  min-height: 58px;
+}
+
 .processGridWithScreens article > p {
-  min-height: 106px;
+  min-height: 112px;
 }
 
 .processScreenshotWrap {
   position: relative;
-  margin-top: 22px;
+  margin-top: auto;
+  padding-top: 22px;
   padding: 7px;
   border-radius: 22px;
   background:
@@ -1195,8 +1200,14 @@ a {
 }
 
 @media (max-width: 980px) {
+  .processGridWithScreens article > h3,
   .processGridWithScreens article > p {
     min-height: 0;
+  }
+
+  .processScreenshotWrap {
+    margin-top: 22px;
+    padding-top: 7px;
   }
 }
 
