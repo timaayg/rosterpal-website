@@ -6,14 +6,15 @@ export default function PrivacyPage() {
     <main className="legalPage">
       {/* HEADER */}
       <header className="legalHeader">
-        <Link href="/" className="legalBrand">
+        <Link href="/" className="legalBrand" aria-label="RosterPal home">
           <Image
-            src="/rosterpal-icon.png"
+            src="/rosterpal-wordmark.png"
             alt="RosterPal"
-            width={42}
-            height={42}
+            width={220}
+            height={64}
+            className="legalBrandLogo"
+            priority
           />
-          <span>RosterPal</span>
         </Link>
 
         <Link href="/" className="legalBack">
@@ -23,7 +24,16 @@ export default function PrivacyPage() {
 
       {/* HERO */}
       <section className="legalHero">
-        <span className="eyebrow">ROSTERPAL</span>
+        <div className="legalHeroMark">
+          <Image
+            src="/rosterpal-mark.png"
+            alt=""
+            width={92}
+            height={92}
+            aria-hidden="true"
+          />
+        </div>
+        <span className="eyebrow">ROSTERPAL · PRIVACY</span>
 
         <h1>Privacy Policy</h1>
 
@@ -356,14 +366,14 @@ export default function PrivacyPage() {
 
       {/* FOOTER */}
       <footer className="legalFooter">
-        <Link href="/" className="legalFooterBrand">
+        <Link href="/" className="legalFooterBrand" aria-label="RosterPal home">
           <Image
-            src="/rosterpal-icon.png"
-            alt=""
-            width={30}
-            height={30}
+            src="/rosterpal-wordmark.png"
+            alt="RosterPal"
+            width={160}
+            height={46}
+            className="legalFooterLogo"
           />
-          <strong>RosterPal</strong>
         </Link>
 
         <span>Plan your shifts. Own your time.</span>
