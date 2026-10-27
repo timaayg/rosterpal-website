@@ -1226,3 +1226,334 @@ a {
     margin-right: auto;
   }
 }
+
+
+/* =========================================
+   Privacy page refresh
+   ========================================= */
+.legalPage {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 6%, rgba(18, 143, 255, 0.15), transparent 30rem),
+    radial-gradient(circle at 88% 10%, rgba(255, 132, 18, 0.10), transparent 25rem),
+    linear-gradient(180deg, #031126 0%, #020d21 42%, #020b1b 100%);
+}
+
+.legalHeader {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 92px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid rgba(138, 176, 227, 0.14);
+}
+
+.legalBrand {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.legalBrandLogo {
+  width: 205px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.legalBack {
+  padding: 11px 15px;
+  border: 1px solid rgba(138, 176, 227, 0.18);
+  border-radius: 12px;
+  color: #c4d4ea;
+  background: rgba(11, 37, 76, 0.42);
+  font-size: 13px;
+  font-weight: 800;
+  transition: 180ms ease;
+}
+
+.legalBack:hover {
+  color: #fff;
+  border-color: rgba(55, 176, 255, 0.38);
+  background: rgba(12, 51, 99, 0.65);
+  transform: translateY(-1px);
+}
+
+.legalHero {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 92px 0 58px;
+  text-align: center;
+  position: relative;
+}
+
+.legalHeroMark {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background: rgba(9, 32, 69, 0.68);
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.28),
+    0 0 52px rgba(0, 139, 255, 0.16);
+}
+
+.legalHeroMark img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.legalHero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9b2d;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2.2px;
+}
+
+.legalHero h1 {
+  margin: 18px 0 18px;
+  color: #fff;
+  font-size: clamp(46px, 6vw, 72px);
+  line-height: 1;
+  letter-spacing: -3.2px;
+}
+
+.legalHero > p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #a9bdd8;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.legalUpdated {
+  display: inline-flex;
+  margin-top: 24px;
+  padding: 8px 12px;
+  border: 1px solid rgba(138, 176, 227, 0.15);
+  border-radius: 999px;
+  color: #829bbd;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.legalContent {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 0 0 96px;
+}
+
+.legalIntro {
+  margin: 0 0 22px;
+  padding: 28px 30px;
+  border: 1px solid rgba(64, 155, 255, 0.20);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(15, 53, 103, 0.74), rgba(6, 27, 59, 0.84));
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+}
+
+.legalIntro p,
+.legalSection p,
+.legalSection li {
+  color: #b4c5dc;
+  font-size: 16px;
+  line-height: 1.78;
+}
+
+.legalIntro p:first-child {
+  margin-top: 0;
+}
+
+.legalIntro p:last-child {
+  margin-bottom: 0;
+}
+
+.legalSection {
+  margin-top: 16px;
+  padding: 30px 32px;
+  border: 1px solid rgba(138, 176, 227, 0.14);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(9, 34, 72, 0.72), rgba(4, 20, 46, 0.76));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.025);
+}
+
+.legalSection h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(23px, 2.7vw, 30px);
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.legalSection p {
+  margin: 12px 0 0;
+}
+
+.legalSection ul {
+  margin: 16px 0 0;
+  padding-left: 23px;
+}
+
+.legalSection li + li {
+  margin-top: 9px;
+}
+
+.legalSection strong {
+  color: #eef6ff;
+}
+
+.legalSection a {
+  color: #58c4ff;
+  font-weight: 800;
+}
+
+.legalSection a:hover {
+  color: #8bd8ff;
+}
+
+.legalNotice {
+  margin-top: 22px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 148, 36, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 130, 14, 0.07);
+}
+
+.legalNotice > strong {
+  color: #ffab4f;
+  font-size: 13px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.legalNotice p {
+  margin-bottom: 0;
+}
+
+.legalContact {
+  margin-top: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border: 1px solid rgba(74, 171, 255, 0.18);
+  border-radius: 16px;
+  background: rgba(11, 43, 84, 0.48);
+}
+
+.legalFooter {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  min-height: 112px;
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 28px;
+  border-top: 1px solid rgba(138, 176, 227, 0.14);
+  color: #8299b8;
+  font-size: 13px;
+}
+
+.legalFooterBrand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.legalFooterLogo {
+  width: 155px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.legalFooter > a:last-child {
+  color: #b9cce3;
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .legalHeader,
+  .legalHero,
+  .legalContent,
+  .legalFooter {
+    width: min(100% - 30px, 900px);
+  }
+
+  .legalHeader {
+    min-height: 76px;
+  }
+
+  .legalBrandLogo {
+    width: 158px;
+  }
+
+  .legalBack {
+    padding: 9px 11px;
+    font-size: 11px;
+  }
+
+  .legalHero {
+    padding: 64px 0 40px;
+  }
+
+  .legalHeroMark {
+    width: 76px;
+    height: 76px;
+    border-radius: 20px;
+  }
+
+  .legalHeroMark img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .legalHero h1 {
+    font-size: clamp(42px, 14vw, 58px);
+    letter-spacing: -2.4px;
+  }
+
+  .legalHero > p {
+    font-size: 16px;
+  }
+
+  .legalContent {
+    padding-bottom: 70px;
+  }
+
+  .legalIntro,
+  .legalSection {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  .legalIntro p,
+  .legalSection p,
+  .legalSection li {
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .legalFooter {
+    min-height: 140px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-items: start;
+  }
+
+  .legalFooterLogo {
+    width: 145px;
+  }
+}
