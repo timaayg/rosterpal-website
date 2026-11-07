@@ -22,6 +22,10 @@ export default function Home() {
       <section className="introHero">
         <div className="introCopy">
           <span className="eyebrow">WHAT IS ROSTERPAL?</span>
+          <a className="iosLaunchNotice" href="https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161" target="_blank" rel="noopener noreferrer">
+            <span className="iosLaunchDot" aria-hidden="true" />
+            Now available on iPhone — Download on the App Store →
+          </a>
           <h1>Your work roster, made useful for real life.</h1>
           <p className="introLead">
             RosterPal is a personal roster and shift-planning app built for people whose work does not fit neatly into a Monday-to-Friday, nine-to-five calendar. It turns complex rotating rosters, changing weekly schedules and unusual shift patterns into a clear personal view of when you work, when you are free and what is coming next.
@@ -100,7 +104,17 @@ export default function Home() {
       <section className="downloadSection" id="download">
         <Image src="/rosterpal-mark.png" alt="" width={88} height={88} className="downloadMark" />
         <h2>Plan your shifts. Own your time.</h2>
-        <p>RosterPal is designed for real shift work.</p>
+        <p>RosterPal is now available on iOS and Android. Download it today.</p>
+        <div className="storeDownloadActions">
+          <a className="storeDownloadButton storeDownloadApple" href="https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161" target="_blank" rel="noopener noreferrer" aria-label="Download RosterPal on the Apple App Store">
+            <span className="storeDownloadIcon" aria-hidden="true">●</span>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a className="storeDownloadButton storeDownloadGoogle" href="https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal" target="_blank" rel="noopener noreferrer" aria-label="Get RosterPal on Google Play">
+            <span className="storeDownloadIcon googlePlayIcon" aria-hidden="true">▶</span>
+            <span><small>GET IT ON</small><strong>Google Play</strong></span>
+          </a>
+        </div>
       </section>
     </main>
   );
