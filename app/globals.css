@@ -1647,3 +1647,30 @@ a {
     min-width: 190px;
   }
 }
+
+
+/* Download badges: real Apple and Google Play icons, including in the hero. */
+.storeDownloadActionsTop {
+  justify-content: flex-start;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+.storeLogo {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+.storeAppleLogo { color: #fff; }
+.storeDownloadActionsTop .storeDownloadButton {
+  min-width: 191px;
+}
+@media (max-width: 900px) {
+  .storeDownloadActionsTop { justify-content: center; }
+}
+@media (max-width: 600px) {
+  .storeDownloadActionsTop .storeDownloadButton {
+    min-width: 0;
+    width: min(100%, 280px);
+  }
+}
