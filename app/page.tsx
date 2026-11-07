@@ -1,6 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const APP_STORE_URL = "https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161";
+const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal";
+
+function StoreDownloadLinks({ top = false }: { top?: boolean }) {
+  return (
+    <div className={top ? "storeDownloadActions storeDownloadActionsTop" : "storeDownloadActions"}>
+      <a className="storeDownloadButton storeDownloadApple" href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label="Download RosterPal on the Apple App Store">
+        <svg className="storeLogo storeAppleLogo" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04c-2.04.027-3.91 1.183-4.961 3.014c-2.117 3.675-.546 9.103 1.519 12.09c1.013 1.454 2.208 3.09 3.792 3.039c1.52-.065 2.09-.987 3.935-.987c1.831 0 2.35.987 3.96.948c1.637-.026 2.676-1.48 3.676-2.948c1.156-1.688 1.636-3.325 1.662-3.415c-.039-.013-3.182-1.221-3.22-4.857c-.026-3.04 2.48-4.494 2.597-4.559c-1.429-2.09-3.623-2.324-4.39-2.376c-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83c-1.207.052-2.662.805-3.532 1.818c-.78.896-1.454 2.338-1.273 3.714c1.338.104 2.715-.688 3.559-1.701"/>
+        </svg>
+        <span><small>Download on the</small><strong>App Store</strong></span>
+      </a>
+      <a className="storeDownloadButton storeDownloadGoogle" href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" aria-label="Get RosterPal on Google Play">
+        <svg className="storeLogo storeGoogleLogo" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#00D0FF" d="M2.5 1.5C2.2 1.9 2 2.4 2 3v18c0 .6.2 1.1.5 1.5L13.2 12 2.5 1.5Z"/>
+          <path fill="#00E08A" d="m2.5 1.5 13.1 7.7-2.4 2.8L2.5 1.5Z"/>
+          <path fill="#FFD13B" d="m13.2 12 2.4-2.8 5.5 3.1c.8.5.8 1 .1 1.5l-5.6 3.2-2.4-5Z"/>
+          <path fill="#FF525A" d="m2.5 22.5 10.7-10.5 2.4 5-13.1 5.5Z"/>
+        </svg>
+        <span><small>GET IT ON</small><strong>Google Play</strong></span>
+      </a>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -22,10 +47,11 @@ export default function Home() {
       <section className="introHero">
         <div className="introCopy">
           <span className="eyebrow">WHAT IS ROSTERPAL?</span>
-          <a className="iosLaunchNotice" href="https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161" target="_blank" rel="noopener noreferrer">
+          <span className="iosLaunchNotice">
             <span className="iosLaunchDot" aria-hidden="true" />
-            Now available on iPhone — Download on the App Store →
-          </a>
+            Now available on iOS and Android
+          </span>
+          <StoreDownloadLinks top />
           <h1>Your work roster, made useful for real life.</h1>
           <p className="introLead">
             RosterPal is a personal roster and shift-planning app built for people whose work does not fit neatly into a Monday-to-Friday, nine-to-five calendar. It turns complex rotating rosters, changing weekly schedules and unusual shift patterns into a clear personal view of when you work, when you are free and what is coming next.
@@ -105,16 +131,7 @@ export default function Home() {
         <Image src="/rosterpal-mark.png" alt="" width={88} height={88} className="downloadMark" />
         <h2>Plan your shifts. Own your time.</h2>
         <p>RosterPal is now available on iOS and Android. Download it today.</p>
-        <div className="storeDownloadActions">
-          <a className="storeDownloadButton storeDownloadApple" href="https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161" target="_blank" rel="noopener noreferrer" aria-label="Download RosterPal on the Apple App Store">
-            <span className="storeDownloadPlatform" aria-hidden="true">iOS</span>
-            <span><small>Download on the</small><strong>App Store</strong></span>
-          </a>
-          <a className="storeDownloadButton storeDownloadGoogle" href="https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal" target="_blank" rel="noopener noreferrer" aria-label="Get RosterPal on Google Play">
-            <span className="storeDownloadIcon googlePlayIcon" aria-hidden="true">▶</span>
-            <span><small>GET IT ON</small><strong>Google Play</strong></span>
-          </a>
-        </div>
+        <StoreDownloadLinks />
       </section>
     </main>
   );
