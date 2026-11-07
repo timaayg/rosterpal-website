@@ -107,7 +107,7 @@ export default function Home() {
         <p>RosterPal is now available on iOS and Android. Download it today.</p>
         <div className="storeDownloadActions">
           <a className="storeDownloadButton storeDownloadApple" href="https://apps.apple.com/us/app/rosterpal-roster-calendar/id6821256161" target="_blank" rel="noopener noreferrer" aria-label="Download RosterPal on the Apple App Store">
-            <span className="storeDownloadIcon" aria-hidden="true">●</span>
+            <span className="storeDownloadPlatform" aria-hidden="true">iOS</span>
             <span><small>Download on the</small><strong>App Store</strong></span>
           </a>
           <a className="storeDownloadButton storeDownloadGoogle" href="https://play.google.com/store/apps/details?id=com.ravenholdigital.rosterpal" target="_blank" rel="noopener noreferrer" aria-label="Get RosterPal on Google Play">
