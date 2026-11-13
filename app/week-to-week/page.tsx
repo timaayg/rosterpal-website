@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Import PDF Work Rosters | Week-to-Week Shift Calendar",
+  description: "Import a weekly work roster from PDF or image, review detected shifts and update your shift calendar with RosterPal Week-to-Week.",
+  alternates: { canonical: "/week-to-week" },
+};
 import Image from "next/image";
 import Link from "next/link";
 
