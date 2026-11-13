@@ -13,6 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/support",
     "/privacy",
     "/terms",
+    "/for/nurses",
+    "/for/transport-workers",
+    "/for/mining-workers",
+    "/for/hospitality-workers",
   ];
 
   return paths.map((path) => ({

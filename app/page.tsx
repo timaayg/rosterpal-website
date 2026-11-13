@@ -100,6 +100,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="featurePageSection">
+        <div className="sectionHeading leftAligned">
+          <span className="eyebrow">WHO ROSTERPAL IS FOR</span>
+          <h2>Shift planning for different industries.</h2>
+          <p>Explore how RosterPal helps workers with rotating and changing schedules.</p>
+        </div>
+        <div className="featureGroupGrid">
+          <article className="featureGroupCard"><h3>Nurses &amp; healthcare</h3><p>Organise early, late and overnight duties.</p><Link href="/for/nurses">Roster planning for nurses →</Link></article>
+          <article className="featureGroupCard"><h3>Transport drivers</h3><p>Keep changing duties, split shifts and rest days visible.</p><Link href="/for/transport-workers">Roster planning for drivers →</Link></article>
+          <article className="featureGroupCard"><h3>Mining &amp; FIFO</h3><p>Plan around repeating work blocks and time off.</p><Link href="/for/mining-workers">Roster planning for mining →</Link></article>
+          <article className="featureGroupCard"><h3>Hospitality</h3><p>Keep up with newly published weekly shifts.</p><Link href="/for/hospitality-workers">Roster planning for hospitality →</Link></article>
+        </div>
+      </section>
+
       <section className="benefitTeaser">
         <span className="eyebrow">WHY ROSTERPAL?</span>
         <h2>Less time decoding rosters. More time planning around them.</h2>
