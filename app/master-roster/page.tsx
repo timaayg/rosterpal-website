@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Rotating Roster App | Master Roster Calendar",
+  description: "Import a repeating or rotating work roster from PDF or image. Review roster lines, shift times and multi-week cycles in the RosterPal calendar.",
+  alternates: { canonical: "/master-roster" },
+};
 import Image from "next/image";
 import Link from "next/link";
 
