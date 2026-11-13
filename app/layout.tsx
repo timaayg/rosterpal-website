@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     template: "%s | RosterPal",
   },
   description: "RosterPal is a shift work calendar app for rotating and changing rosters. Organise shifts, import work rosters and plan time off on iOS and Android.",
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "RosterPal",
