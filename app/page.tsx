@@ -39,6 +39,7 @@ export default function Home() {
           <Link href="/week-to-week">Week-to-Week</Link>
           <Link href="/benefits">Benefits</Link>
           <Link href="/plans">Free vs Premium</Link>
+          <Link href="/guides">Guides</Link>
           <Link href="/faq">FAQ</Link>
         </nav>
         <a className="headerCta" href="#download">Get RosterPal</a>
@@ -130,6 +131,13 @@ export default function Home() {
         <div className="plansTeaserActions">
           <Link className="button buttonPrimary" href="/plans">Compare Free &amp; Premium</Link>
         </div>
+      </section>
+
+      <section className="benefitTeaser">
+        <span className="eyebrow">ROSTERPAL GUIDES</span>
+        <h2>Practical tips for organising shift work.</h2>
+        <p>Learn how to manage rotating rosters, import PDF shifts, plan leave and keep up with weekly changes.</p>
+        <Link className="button buttonPrimary" href="/guides">Read shift work guides</Link>
       </section>
 
       <section className="faqTeaser">
