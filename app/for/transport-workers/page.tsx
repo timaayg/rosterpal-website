@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Roster Calendar App for Transport Drivers",
-  description: "Transport workers often deal with early starts, late finishes, changing duty times and split shifts. RosterPal helps you keep shift details visible alongside the rest of your life. Use Master Roster for a repeating duty cycle or Week-to-Week when new rosters are issued regularly.",
+  title: "Transport Driver Shift Calendar & Roster App",
+  description: "Track early starts, late finishes, split shifts and rotating duties. RosterPal helps bus, train and light rail workers organise their rosters.",
   alternates: { canonical: "/for/"+"transport-workers" },
 };
 
