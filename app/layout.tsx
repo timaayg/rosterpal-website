@@ -7,13 +7,19 @@ export const metadata: Metadata = {
     default: "RosterPal | Shift Work Calendar & Roster App",
     template: "%s | RosterPal",
   },
-  description: "RosterPal is a shift work calendar app for rotating and changing rosters. Organise shifts, import work rosters and plan time off on iOS and Android.",
+  description: "RosterPal helps shift workers organise rotating and changing rosters. Import PDF schedules, view upcoming shifts and plan time off on iOS and Android.",
   openGraph: {
     type: "website",
     siteName: "RosterPal",
     title: "RosterPal | Shift Work Calendar & Roster App",
     description: "Plan your shifts. Own your time. Organise rotating and weekly work rosters with RosterPal.",
     url: "https://rosterpal.net",
+    images: ["/rosterpal-brand-square.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RosterPal | Shift Work Calendar & Roster App",
+    description: "Plan your shifts. Own your time. Organise rotating and weekly rosters.",
     images: ["/rosterpal-brand-square.png"],
   },
 };

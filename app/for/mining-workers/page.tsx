@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Shift Roster Calendar for Mining & FIFO Workers",
-  description: "Mining and FIFO work can follow multi-week cycles with long stretches on and off duty. RosterPal can help make those patterns easier to view and plan around. Use Master Roster for a repeating multi-week cycle, then check leave and personal plans against your calendar.",
+  title: "FIFO & Mining Roster Calendar App",
+  description: "Keep track of mining and FIFO swing rosters, multi-week cycles and days off. Plan ahead with RosterPal's rotating shift calendar.",
   alternates: { canonical: "/for/"+"mining-workers" },
 };
 
