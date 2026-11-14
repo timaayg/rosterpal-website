@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Shift Calendar App for Hospitality Workers",
-  description: "Hospitality shifts may change each week, including evenings, weekends and split duties. RosterPal helps you organise published shifts without relying on repeated manual calendar entry. Use Week-to-Week when a new PDF or image roster is published, then review the detected shifts before adding them to your calendar.",
+  title: "Hospitality Shift Calendar & Weekly Rosters",
+  description: "Organise changing hospitality shifts, weekend duties and split shifts. Import a weekly PDF roster and review it in RosterPal.",
   alternates: { canonical: "/for/"+"hospitality-workers" },
 };
 
