@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Shift Roster App for Nurses & Healthcare Workers",
-  description: "Healthcare rosters can include changing start times, night shifts, rest days and rotating patterns. RosterPal helps you see your duties and personal plans together. Use Master Roster for a repeating rotation, or Week-to-Week when your workplace publishes a different schedule each week.",
+  title: "Nurse Shift Calendar & Rotating Rosters",
+  description: "Organise nursing shifts, night duties and rotating rosters in one calendar. Import PDF rosters with RosterPal for iOS and Android.",
   alternates: { canonical: "/for/"+"nurses" },
 };
 
